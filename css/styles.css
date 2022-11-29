@@ -3,3 +3,68 @@
 color:#323232 black
 color: #e8e4e4 gris
 color: #33c6cf bleu */
+
+body{
+  background: #e8e4e4;
+  font-family: "Poppins", sans-serif;
+}
+
+h1{
+  font-weight: 800;
+  color: #323232;
+  font-size: 3.125em;
+  line-height: 120%;
+}
+
+h2{
+  font-weight: 600;
+  color: #323232;
+  font-size: 1.25em;
+}
+
+h3{
+  font-weight: 600;
+  font-size: 1.25em;
+}
+
+.button a{
+  text-decoration: none;
+  color: #E8E4E4;
+
+}
+.button{
+  width: 280px;
+  height: 85px;
+  background: #0E56CB;
+  border-radius: 20px;
+  color: #E8E4E4;
+  border: none;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#no_mobile{
+  display: none;
+}
+
+
+.portfolio{
+  display: flex;
+  height: 70vh;
+  max-width: 100vw;
+}
+.imgfolio{
+  display: flex;
+  flex: 1;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.imgfolio:hover{
+  flex-grow: 4;
+}
