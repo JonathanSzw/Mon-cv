@@ -6,7 +6,9 @@ color: #33c6cf bleu */
 
 body{
   background: #e8e4e4;
+  background: linear-gradient(180deg, rgba(81,23,35,1) 0%, rgba(81,23,35,1) 0%, rgba(232,228,228,1) 0%, rgba(207,203,203,1) 100%);
   font-family: "Poppins", sans-serif;
+  margin: 0;
 }
 
 h1{
@@ -15,7 +17,12 @@ h1{
   font-size: 3.125em;
   line-height: 120%;
 }
-
+#divider{
+  border: 3px solid #323232;
+  width: 65%;
+  display: block;
+  border-radius: 5px;
+}
 h2{
   font-weight: 600;
   color: #323232;
@@ -26,6 +33,16 @@ h3{
   font-weight: 600;
   font-size: 1.25em;
 }
+
+nav{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #E8E4E4;
+  box-shadow: 0px -3px 8px -4px rgba(0, 0, 0, 0.1);
+  z-index: 99;
+}
+
 
 .button a{
   text-decoration: none;
@@ -45,10 +62,31 @@ h3{
   gap: 10px;
 }
 
+.button:hover{
+  background: none;
+  color: #323232;
+  filter: brightness(0) saturate(100%) invert(21%) sepia(98%) saturate(1739%) hue-rotate(205deg) brightness(105%) contrast(98%);
+  box-shadow: inset 0px 0px 0px 2px;
+}
+
 #no_mobile{
   display: none;
 }
 
+.comp_logo::-webkit-scrollbar{
+  display:none;
+}
+.comp_logo{
+  display: flex;
+  overflow-x: auto;
+}
+.card{
+  flex: 0 0 auto;
+  padding-right: 35px;
+}
+.card:first-child{
+  padding-left: 25px;
+}
 
 .portfolio{
   display: flex;
