@@ -2,7 +2,11 @@
 
 color:#323232 black
 color: #e8e4e4 gris
-color: #33c6cf bleu */
+color: #0e56cb bleu */
+
+html{
+  scroll-behavior: smooth;
+}
 
 body{
   background: #e8e4e4;
@@ -10,28 +14,30 @@ body{
   font-family: "Poppins", sans-serif;
   margin: 0;
 }
-
+ul li{
+  list-style-type: none;
+}
 h1{
   font-weight: 800;
   color: #323232;
   font-size: 3.125em;
   line-height: 120%;
+  text-align: center;
+  margin-bottom: 0;
 }
-#divider{
-  border: 3px solid #323232;
-  width: 65%;
-  display: block;
-  border-radius: 5px;
-}
+
 h2{
   font-weight: 600;
   color: #323232;
   font-size: 1.25em;
+  text-align: center;
 }
 
 h3{
   font-weight: 600;
   font-size: 1.25em;
+  color: #323232;
+  margin-left: 25px;
 }
 
 nav{
@@ -41,8 +47,14 @@ nav{
   background: #E8E4E4;
   box-shadow: 0px -3px 8px -4px rgba(0, 0, 0, 0.1);
   z-index: 99;
+  display: flex;
 }
 
+.action_button{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .button a{
   text-decoration: none;
@@ -60,6 +72,7 @@ nav{
   display: flex;
   justify-content: center;
   gap: 10px;
+  margin: 15px;
 }
 
 .button:hover{
@@ -69,16 +82,37 @@ nav{
   box-shadow: inset 0px 0px 0px 2px;
 }
 
+.social_bar{
+  display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 5px;
+}
+.icon:hover{
+  filter: brightness(0) saturate(100%) invert(21%) sepia(62%) saturate(3379%) hue-rotate(212deg) brightness(94%) contrast(94%);
+}
+
+#divider{
+  height: 5px;
+  background: #323232;
+  width: 65%;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
 #no_mobile{
   display: none;
 }
 
-.comp_logo::-webkit-scrollbar{
+.hard_skill::-webkit-scrollbar{
   display:none;
 }
-.comp_logo{
+.hard_skill{
   display: flex;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 .card{
   flex: 0 0 auto;
@@ -88,6 +122,18 @@ nav{
   padding-left: 25px;
 }
 
+.soft_skill{
+  background: #0e56cb;
+  color: #E8E4E4;
+  line-height: 40px;
+}
+.soft_skill:first-child{
+  padding-top: 20px;
+}
+
+.card_exp{
+
+}
 .portfolio{
   display: flex;
   height: 70vh;
