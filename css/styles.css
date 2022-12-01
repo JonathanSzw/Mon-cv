@@ -116,7 +116,7 @@ nav{
 }
 .card{
   flex: 0 0 auto;
-  padding-right: 35px;
+  padding-right: 30px;
 }
 .card:first-child{
   padding-left: 25px;
