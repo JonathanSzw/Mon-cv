@@ -379,8 +379,10 @@ ul.rb li .timestamp {
   display: flex;
   align-items: center;
   gap: 1em;
-  padding: 1.2em;
-  height: 13vh;
+  /* padding: 1.2em;
+  height: 13vh; */
+  padding: 0 1rem;
+  height: 17vh;
   border-radius: calc(var(--curve) * 1px) 0 0 0;
   background-color: var(--grey);
   transform: translateY(-100%);
