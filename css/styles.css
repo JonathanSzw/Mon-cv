@@ -4,6 +4,7 @@
   --grey: #e8e4e4;
   --blue: #0e56cb;
   --lightblue: #1886ec;
+  --curve: 40;
 }
 html{
   scroll-behavior: smooth;
@@ -127,11 +128,11 @@ nav{
   padding: 5px 0 10px 0;
   filter:  drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.15));
 }
-.card{
+.hard{
   flex: 0 0 auto;
   padding-right: 30px;
 }
-.card:first-child{
+.hard:first-child{
   padding-left: 25px;
 }
 
@@ -150,7 +151,7 @@ nav{
   width: 90%;
   overflow: hidden;
   filter:  drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.15));
-  border-radius: 30px;
+  border-radius: 40px;
   display: flex;
   justify-content: center;
 }
@@ -237,7 +238,7 @@ z-index: 99;
   left: -50%;
   height: 300%;
   width: 200%;
-  background: var(--black);
+  background: var(--blue);
   border-radius: 35%;
   animation: spin 10s ease-in-out infinite;
 }
@@ -258,12 +259,186 @@ z-index: 99;
   width: 0;
 }
 
-.card_exp{
-  height: 15rem;
+.rightbox {
+  /* padding: 0em 34rem 0em 0em; */
+  height: 100%;
+}
+
+.rb-container {
+  width: 50%;
+  /* margin: auto; */
+  display: block;
+  position: relative;
+}
+
+.rb-container ul.rb {
+  margin: 0.5em 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.rb-container ul.rb li {
+  list-style: none;
+  margin: auto;
+  margin-left: 5em;
+  min-height: 50px;
+  border-left: 3px solid var(--blue);
+  padding: 0 0 30px 30px;
+  position: relative;
+}
+
+.rb-container ul.rb li::before {
+  position: absolute;
+  left: -15px;
+  top: -2px;
+  content: " ";
+  border: 4px solid var(--blue);
+  border-radius: 20%;
+  background: var(--blue);
+  height: 20px;
+  width: 20px;
+  transition: all 500ms ease-in-out;
+}
+
+.rb-container ul.rb li:hover::before {
+  border-color: var(--black);
+  transition: all 1000ms ease-in-out;
+}
+
+ul.rb li .timestamp {
+  color: var(--blue);
+  position: relative;
+  width: 100px;
+  font-weight: 600;
+}
+
+.item-title {
+  color: var(--black);
+  width: 250px;
+}
+
+.item-title span {
+  font-weight: 600;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 1.5rem 5vw;
+  padding: 0;
+  list-style-type: none;
+  /* background: var(--blue); */
   width: 90%;
-  filter:  drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.15));
-  background: var(--grey);
-  border-radius: 30px;
+  height: 15em;
+}
+
+.card {
+  position: relative;
+  display: block;
+  height: 100%;
+  border-radius: calc(var(--curve) * 1px);
+  overflow: hidden;
+  text-decoration: none;
+  background: var(--blue);
+  filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.15));
+}
+.date__center{
+  text-align: center;
+  padding-top: 25px;
+  font-weight: 600;
+  color: var(--grey);
+  font-size: 2em;
+  margin: 0;
+}
+
+.card__image {
+  width: 100%;
+  height: auto;
+}
+
+.card__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  border-radius: calc(var(--curve) * 1px);
+  background-color: var(--grey);
+  transform: translateY(100%);
+  transition: .2s ease-in-out;
+}
+
+.card:hover .card__overlay {
+  transform: translateY(0);
+}
+
+.card__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding: 1.6em;
+  border-radius: calc(var(--curve) * 1px) 0 0 0;
+  background-color: var(--grey);
+  transform: translateY(-100%);
+  transition: .2s ease-in-out;
+}
+
+.card__arc {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  z-index: 1;
+}
+
+.card__arc path {
+  fill: var(--grey);
+  d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+}
+
+.card:hover .card__header {
+  transform: translateY(0);
+}
+
+.card__thumb {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.card__title {
+  font-size: 1em;
+  margin: 0 0 .3em;
+  color: var(--black);
+  font-weight: 600;
+  line-height: 23px;
+}
+
+
+.card__tagline {
+  display: block;
+  margin: 1em 0;
+  font-size: .8em;
+  color: #D7BDCA;
+}
+
+.card__status {
+  font-size: .8em;
+  color: var(--black);
+}
+
+.card__description {
+  padding: 0 2em 2em;
+  margin: 0;
+  color: #D7BDCA;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
 
 .portfolio_container{
@@ -312,6 +487,7 @@ z-index: 99;
   width: 200px;
   margin-left: -100px;
   text-align: center;
+  z-index: 99;
 }
 
 .slider_navlink{
@@ -342,4 +518,12 @@ footer{
   width: 100%;
   height: 200px;
   background: var(--black);
+  margin-top: 50px
+}
+
+.footer_social{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 40px;
 }
