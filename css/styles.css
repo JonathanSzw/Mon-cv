@@ -559,7 +559,7 @@ nav li span{
 }
 nav li span:hover{
   border-bottom: var(--blue) solid 2px;
-  filter: brightness(0) saturate(100%) invert(21%) sepia(98%) saturate(1739%) hue-rotate(205deg) brightness(105%) contrast(98%);
+  color: var(--blue);
 }
 
 li img{
@@ -572,12 +572,32 @@ nav{
   box-shadow: 0px 8px 8px -3px rgba(0, 0, 0, 0.1);
 }
 .titre{
-display: flex;
-flex-direction: column;
+  position: absolute;
+  
 }
 
+h1{
+  font-size: 4.688em;
+  width: 55%;
+  text-align:justify;
+}
+h2{
+  font-size: 1.875em;
+  text-align: justify;
+}
+.action_button{
 
+  flex-direction: row;
+  padding-top: 20%;
+}
+.top_main{
 
+}
+.intro{
+  display: flex;
+  justify-content: center;
+}
 
+}
 
 }
