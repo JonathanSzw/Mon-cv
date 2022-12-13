@@ -205,6 +205,37 @@ z-index: 99;
   height: 100%;
   z-index: 99;
 }
+.slides_soft::-webkit-scrollbar{
+  display:none;
+}
+.slider_soft{
+width: 100%;
+max-width: 500px;
+height: 100%;
+position: relative;
+}
+.slides_soft {
+    display: flex;
+    overflow-x: scroll;
+    position: relative;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    height: 100%;
+}
+.slide_soft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+    height: 400px;
+    margin-right: 0px;
+    box-sizing: border-box;
+    /* background: white; */
+    transform-origin: center center;
+    transform: scale(1);
+    scroll-snap-align: center;
+}
 
 .slider_skill {
   box-sizing: border-box;
@@ -416,16 +447,16 @@ transform: rotate(90deg);
   d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
 }
 .card__headerleft{
-position: relative;
-    display: flex;
-    align-items: center;
-    gap: 1em;
-    padding: 0 0.5rem;
-    height: 17vh;
-    border-radius: 0 calc(var(--curve) * 1px);
-    background-color: var(--grey);
-    transform: translateY(-100%);
-    transition: .2s ease-in-out;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding: 0 0.5rem;
+  height: 17vh;
+  border-radius: 0 calc(var(--curve) * 1px);
+  background-color: var(--grey);
+  transform: translateY(-100%);
+  transition: .2s ease-in-out;
 }
 .card__arc path {
   fill: var(--grey);
@@ -573,7 +604,7 @@ nav{
 }
 .titre{
   position: absolute;
-  
+
 }
 
 h1{
@@ -585,19 +616,48 @@ h2{
   font-size: 1.875em;
   text-align: justify;
 }
+h3{
+  font-size: 1.25em;
+  text-align: center;
+}
 .action_button{
-
   flex-direction: row;
   padding-top: 20%;
 }
-.top_main{
 
-}
 .intro{
   display: flex;
   justify-content: center;
 }
 
+.hard_skill{
+  justify-content: center;
+}
+.hard:first-child{
+  padding-left: 0;
+}
+.hard{
+  padding-right: 40px;
+}
+.skill{
+  justify-content: normal;
+}
+.slider_soft{
+  max-width: none;
+  width: auto;
+  position: inherit;
+}
+.slides_soft{
+  overflow-x: inherit;
+  position: inherit;
+  scroll-behavior: inherit;
+  scroll-snap-type: none;
+}
+.skill::after{
+  animation: none;
+}
+.slider_softlink{
+  display: none;
 }
 
 }
