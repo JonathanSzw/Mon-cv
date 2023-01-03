@@ -231,6 +231,10 @@ font-weight: bold;
   filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(3440%) hue-rotate(190deg) brightness(119%) contrast(79%);
 }
 
+.mobile_off{
+  display: none;
+}
+
 .hardskill_container{
   display: flex;
   align-items: center;
@@ -637,4 +641,7 @@ footer p{
 
 #arrow{
 
+}
+
+@media screen and (min-width:1024px){
 }
