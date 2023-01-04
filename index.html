@@ -23,16 +23,16 @@
             <img id="size_logo"src="img/JS_logo.svg" alt="">
           </div>
           <div class="menu-items">
-            <li><a href="#">Acceuil</a></li>
-            <li><a href="#">Compétences</a></li>
-            <li><a href="#">Expériences & Formations</a></li>
-            <li><a href="#">Portfolio</a></li>
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#comp">Compétences</a></li>
+            <li><a href="#exp">Expériences & Formations</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
             <div class="social_icon">
-              <img src="img/localisation_icon.svg" alt="">
-              <img src="img/phone_icon.svg" alt="">
-              <img src="img/mail_icon.svg" alt="">
-              <img src="img/github_icon.svg" alt="">
-              <img src="img/linkedin_icon.svg" alt="">
+              <a href="https://goo.gl/maps/fnw7D4ECNj8p2afA9" target="_blank"><img src="img/localisation_icon.svg" alt=""></a>
+              <a href="tel:+"><img src="img/phone_icon.svg" alt=""></a>
+              <a href="mailto:szewczikjonathan@gmail.com"><img src="img/mail_icon.svg" alt=""></a>
+              <a href="" target="_blank"><img src="img/github_icon.svg" alt=""></a>
+              <a href="https://github.com/JonathanSzw" target="_blank"><img src="img/linkedin_icon.svg" alt=""></a>
             </div>
           </div>
         </div>
@@ -40,26 +40,29 @@
     </nav>
 
     <main>
-      <section id="acceuil" class="top_page">
-        <div class="">
-          <h1 >Szewczik Jonathan</h1>
-          <h2>Projet : Webdesigner</h2>
+      <section class="intro">
+        <div id="home" class="top_page">
+          <div class="">
+            <h1>Szewczik Jonathan</h1>
+            <h2>Projet : Webdesigner</h2>
+          </div>
+          <div class="cta">
+            <div class="button">
+              <img src="img/download_icon.svg" alt="">
+              <a href="img/Jonathan Szewczik.pdf" target="_blank">Télécharger mon CV</a>
+            </div>
+            <div class="button">
+              <img src="img/mail_iconblue.svg" alt="">
+              <a href="mailto:szewczikjonathan@gmail.com">Me contacter</a>
+            </div>
+          </div>
         </div>
-        <div class="cta">
-          <div class="button">
-            <img src="img/download_icon.svg" alt="">
-            <a href="#">Télécharger mon CV</a>
-          </div>
-          <div class="button">
-            <img src="img/mail_iconblue.svg" alt="">
-            <a href="#">Me contacter</a>
-          </div>
-          <div class="mobile_off">
-            <img src="img/mockup.png" alt="">
-          </div>
+        <div class="mobile_off">
+          <img src="img/mockup.png" alt="">
         </div>
+
       </section>
-        <h3>Compétences</h3>
+        <h3 id="comp">Compétences</h3>
     <section class="hardskill_container">
       <div class="slider">
         <div class="slides">
@@ -164,7 +167,7 @@
   </div>
 </div>
 
-<h3>Portfolio</h3>
+<h3 id="portfolio">Portfolio</h3>
   <div class="portfolio_container">
     <div class="slider_portfolio">
       <div class="slides_portfolio">
@@ -185,10 +188,10 @@
     </div>
     </div>
   </div>
-</section>
+
 <footer class="footer_style">
   <div class="footer_social">
-    <a href="#acceuil"><img id="arrow" src="img/arrow_icon.svg" alt=""></a>
+    <a href="#home"><img id="arrow" src="img/arrow_icon.svg" alt=""></a>
 
   <div class="footer_icon">
     <div class="footer_align">
