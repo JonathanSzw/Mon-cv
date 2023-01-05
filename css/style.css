@@ -91,7 +91,6 @@ body{
   display: block;
   height: 4px;
   width: 100%;
-  /* border-radius: 10px; */
   background: var(--grey);
 }
 
@@ -139,7 +138,7 @@ body{
 .social_icon{
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 10px;
   padding: 0.7rem;
 }
 
@@ -202,7 +201,7 @@ h3{
   height: 530px;
   background-image: url(../img/hero_background.png);
   background-size: cover;
-
+  margin-top: 80px;
 }
 .cta{
   display: flex;
@@ -364,7 +363,7 @@ h3{
 .rightbox {
   /* padding: 0em 34rem 0em 0em; */
   height: 100%;
-  background-image: url(../img/soft_skill_background.png);
+  background-image: url(../img/exp_background.png);
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -480,10 +479,6 @@ ul.rb li .timestamp {
   transition: .2s ease-in-out;
 }
 
-/* .card:hover .card__overlay {
-  transform: translateY(0);
-} */
-
 .card__header {
   position: relative;
   display: flex;
@@ -514,10 +509,7 @@ left: 0;
 z-index: 1;
 transform: rotate(90deg);
 }
-/* .card__arcleft path {
-  fill: var(--grey);
-  d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
-} */
+
 .card__headerleft{
   position: relative;
   display: flex;
@@ -644,11 +636,30 @@ footer p{
   flex-direction: column;
   align-items: center;
   padding-top: 30px;
-  gap: 20px;
+  padding-bottom: 30px;
+  gap: 40px;
 }
 .footer_align{
   display: flex;
   gap: 15px;
+  flex-direction: column;
+}
+
+.footer_align a{
+  color:var(--grey);
+  text-decoration: none;
+}
+
+.footer_align img{
+  padding-right: 20px;
+}
+
+.titre_mobile_off{
+  display: none;
+}
+
+.portfolio_pc{
+  display: none;
 }
 
 @media screen and (min-width:1024px){
@@ -656,6 +667,7 @@ footer p{
   display: flex;
   height: 530px;
   width: 50%;
+  margin-top: 80px;
 }
 
 .intro{
@@ -680,7 +692,79 @@ footer p{
 .nav-container .checkbox{
   display: none;
 }
+
 .navbar .menu-items{
 
+}
+
+.competence{
+  display: flex;
+}
+
+.hardskill_container{
+  width: 50%;
+}
+
+.slider{
+  max-width: none;
+}
+
+.softskill_container{
+  width: 50%;
+}
+
+.titre_pc_off{
+  display: none;
+}
+.titre_mobile_off{
+  display: block;
+}
+.experience_box{
+  display: flex;
+}
+.rightbox{
+  width: 50%;
+}
+
+.rb-container{
+  width: auto;
+  margin: inherit;
+  margin-top: 0;
+}
+.rb-container ul.rb{
+  margin: 2.5em 0;
+}
+
+.formation{
+  width: 50%;
+  align-items: center;
+}
+.cards{
+  width: 60%;
+}
+.portfolio_container_mobile{
+  display: none;
+}
+
+.portfolio_pc{
+  display: flex;
+  height: 70vh;
+  max-width: 100vw;
+  padding-bottom: 20px;
+}
+
+.imgfolio{
+  display: flex;
+  flex: 1;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+}
+
+.imgfolio:hover{
+  flex-grow: 4;
 }
 }
