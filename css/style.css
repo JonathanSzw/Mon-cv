@@ -132,9 +132,11 @@ body{
   bottom: 18px;
   left: 30px;
 }
+
 #size_logo{
   width: 60px;
 }
+
 .social_icon{
   display: flex;
   justify-content: center;
@@ -203,12 +205,14 @@ h3{
   background-size: cover;
   margin-top: 80px;
 }
+
 .cta{
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 25px;
 }
+
 .button{
   width: 250px;
   height: 85px;
@@ -313,7 +317,6 @@ h3{
   align-items: center;
   justify-content: center;
   height: 100%;
-
 }
 
 .slide_softskill {
@@ -452,6 +455,7 @@ ul.rb li .timestamp {
   background: var(--blue);
   filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.15));
 }
+
 .date__center{
   display: flex;
   justify-content: center;
@@ -500,6 +504,7 @@ ul.rb li .timestamp {
   right: 0;
   z-index: 1;
 }
+
 .card__arcleft{
 width: 80px;
 height: 80px;
@@ -693,10 +698,6 @@ footer p{
   display: none;
 }
 
-.navbar .menu-items{
-
-}
-
 .competence{
   display: flex;
 }
@@ -742,6 +743,7 @@ footer p{
 .cards{
   width: 60%;
 }
+
 .portfolio_container_mobile{
   display: none;
 }
