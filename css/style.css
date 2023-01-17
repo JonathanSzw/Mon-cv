@@ -200,7 +200,7 @@ h3{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 530px;
+  height: 100vh;
   background-image: url(../img/hero_background.png);
   background-size: cover;
   margin-top: 80px;
@@ -683,6 +683,7 @@ footer p{
 .top_page{
   background-size: cover;
   width: 50%;
+  height: 530px;
 }
 
 .cta{
