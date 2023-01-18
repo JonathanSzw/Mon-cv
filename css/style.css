@@ -55,6 +55,7 @@ body{
 
 .navbar .nav-container li:hover{
   background-color: var(--blue);
+  padding: 20px;
 }
 
 .nav-container {
@@ -341,7 +342,7 @@ h3{
 
 .slide span{
   color: var(--darkblue);
-  font-weight: 500;
+  font-weight: 600;
   position: absolute;
   top: 50px;
 }
@@ -373,8 +374,6 @@ h3{
 }
 
 .rb-container {
-  /* width: 50%; */
-  /* margin: auto; */
   display: block;
   position: relative;
   height: 530px;
@@ -384,11 +383,10 @@ h3{
 .rb-container ul.rb {
   margin: 0.5em 0;
   padding: 0;
-  /* display: inline-block; */
   display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .rb-container ul.rb li {
@@ -564,34 +562,33 @@ transform: rotate(90deg);
   margin-bottom: 7%;
 }
 .slider_portfolio {
-    width: 100%;
-    max-width: 500px;
-    height: 100%;
-    position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  position: relative;
 }
 
 .slides_portfolio {
-    display: flex;
-    overflow-x: scroll;
-    position: relative;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
-    height: 100%;
+  display: flex;
+  overflow-x: scroll;
+  position: relative;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  height: 100%;
 }
 
 .slide_portfolio {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    width: 100%;
-    height: 400px;
-    margin-right: 0px;
-    box-sizing: border-box;
-    /* background: white; */
-    transform-origin: center center;
-    transform: scale(1);
-    scroll-snap-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 100%;
+  height: 400px;
+  margin-right: 0px;
+  box-sizing: border-box;
+  transform-origin: center center;
+  transform: scale(1);
+  scroll-snap-align: center;
 }
 
 .slider_nav {
@@ -673,6 +670,7 @@ footer p{
   height: 530px;
   width: 50%;
   margin-top: 80px;
+
 }
 
 .intro{
@@ -683,7 +681,7 @@ footer p{
 .top_page{
   background-size: cover;
   width: 50%;
-  height: 530px;
+  height: 610px;
 }
 
 .cta{
@@ -699,10 +697,30 @@ footer p{
   display: none;
 }
 
-.competence{
+.nav-container{
   display: flex;
+  justify-content: flex-end;
 }
 
+.competence{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar .menu-items{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  background-color: transparent;
+  width: auto;
+  height: auto;
+  padding-top: 0;
+  transform: none;
+  text-align: inherit;
+
+}
 .hardskill_container{
   width: 50%;
 }
@@ -733,6 +751,7 @@ footer p{
   margin: inherit;
   margin-top: 0;
 }
+
 .rb-container ul.rb{
   margin: 2.5em 0;
 }
@@ -741,6 +760,7 @@ footer p{
   width: 50%;
   align-items: center;
 }
+
 .cards{
   width: 60%;
 }
