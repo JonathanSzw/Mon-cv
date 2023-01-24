@@ -340,6 +340,13 @@ h3{
     font-weight: 500;
 }
 
+.softskill_title{
+color: var(--grey);
+  font-weight: 600;
+  position: absolute;
+  top: 50px;
+}
+
 .slide span{
   color: var(--darkblue);
   font-weight: 600;
@@ -731,6 +738,10 @@ footer p{
 
 .softskill_container{
   width: 50%;
+}
+
+.slider_navlink, .slider_navlink_soft{
+  display: none;
 }
 
 .titre_pc_off{
